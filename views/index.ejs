@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
+    <title>YouTube to MP3 Converter</title>
+</head>
+<body>
+    <div class="container">
+
+        <% if (link && title) { %> 
+            <h1>Download Your MP3</h1>
+            
+            <p><%= title %></p>
+            <a href=<%= link %> target="_blank" download>Download MP3</a>
+            <br>
+            <form action="/redirect" method="GET">
+                <button type="submit">
+                    Convert Another Video
+                </button>
+            </form>
+        <% } else { %>
+        
+            <h1>Youtube to MP3 Converter</h1>
+    
+            <form action="/convert" method="POST">
+                <!-- <label for="videoUrl">YouTube URL</label><br> -->
+                <input type="text" name="videoUrl" placeholder="Youtube link" required>
+                <button type="submit">Convert</button>
+            </form>
+        
+        <% } %>
+            
+    </div>
+</body>
+</html>

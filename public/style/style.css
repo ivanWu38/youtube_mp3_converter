@@ -1,0 +1,68 @@
+body {
+   
+    text-align: center;
+    height: 100vh; 
+    font-family: "Playwrite IN", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    background-color:#F0A04B;
+} 
+
+h1 {
+    font-size: 3rem;
+}
+
+button {
+    font-family: "Playwrite IN", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: white
+}
+
+button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: grey;
+}
+
+input {
+    text-align: center;
+    font-family: "Playwrite IN", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+  
+}
+
+input:focus {
+    outline: none; /* Remove the default outline */
+    border-color: black; /* Change the border color to black */
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+   width: 40%;
+   margin: 0 auto;
+   padding-top: 200px;
+   
+}
